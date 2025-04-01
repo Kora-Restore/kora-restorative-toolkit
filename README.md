@@ -6,6 +6,16 @@ This is not a utopia. It is a blueprint grounded in ancient truth, real data, an
 
 ---
 
+## 📊 Live Peace & Wellbeing Dashboard
+
+Explore the interactive data visualization of human history and peace potential:
+
+🔗 [Open the Dashboard](https://kora-restore.github.io/kora-restorative-toolkit/algorithm/pwi_dashboard.html)
+
+This dashboard compares historical civilizations across violence, sustainability, and wellbeing — and visualizes what a peaceful future could look like based on real metrics.
+
+---
+
 ## 🌱 What Is Kōra?
 
 **Kōra** (a name inspired by Polynesian roots meaning “core” or “balance”) is a **universal restorative justice and governance toolkit**.
