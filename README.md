@@ -13,6 +13,20 @@ Explore the interactive data visualization of human history and peace potential:
 🔗 [Open the Dashboard](https://kora-restore.github.io/kora-restorative-toolkit/algorithm/pwi_dashboard.html)
 
 This dashboard compares historical civilizations across violence, sustainability, and wellbeing — and visualizes what a peaceful future could look like based on real metrics.
+=======
+Explore our visual, historical model of global violence, sustainability, and collective progress:
+
+🔗 [View the Dashboard (HTML)](https://kora-restore.github.io/kora-restorative-toolkit/algorithm/pwi_dashboard.html)
+
+---
+
+## 🧬 Ethical Population Strategy
+
+We propose a humane, voluntary, and restorative approach to population wellbeing — respecting freedom of choice while encouraging ecological responsibility.
+
+🔗 [Read Population Ethics Philosophy](https://github.com/Kora-Restore/kora-restorative-toolkit/blob/main/principles/population-ethics.md)
+
+> Kōra believes in the right to choose — and the duty to choose wisely.
 
 ---
 
@@ -31,7 +45,7 @@ It collects:
 
 This living repository includes:
 
-- 🧭 **Foundational Principles** — The roots of Kōra: interdependence, reciprocity, consent, compassion.
+- 🧭 **Foundational Principles** — The roots of Kōra: interdependence, reciprocity, consent, compassion.    
 - ⚖️ **Governance Models** — How to elect elders, hold councils, and design restorative leadership.
 - 🔁 **Justice Processes** — Step-by-step circle protocols, harm repair, and reintegration.
 - 🧒 **Education Systems** — Peer mediation, restorative classrooms, empathy-based learning.
