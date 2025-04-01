@@ -1,24 +1,27 @@
 
 import pandas as pd
 
-def calculate_pwi(file_path):
-    # Load dataset
-    df = pd.read_csv(file_path)
+def calculate_pwi_scores(data):
+    # Assume input `data` is a dataframe with each historical era and variables:
+    # 'Military Intensity', 'Climate Stability', 'Governance Score', 'Inequality Index', 'Social Trust', 'Mental Health Index'
 
-    # Calculate Violence Index (VI)
-    df["VI"] = df["Conflicts_per_century"] * df["Deaths_per_conflict"]
+    df = data.copy()
 
-    # Calculate Sustainable & Equitable Wellbeing Index (SEWI)
-    df["SEWI"] = (df["BHW"] + df["EF"] + df["ES"]) / 3
+    # 1. Violence Index (Deaths per million per year)
+    df["Violence Index (VI)"] = df["Military Intensity"] * 100  # scaled multiplier
 
-    # Calculate Peace & Wellbeing Index (PWI)
-    df["PWI"] = df["SEWI"] / df["VI"]
+    # 2. Wellbeing Score (WS) derived from weighted KPIs
+    df["Wellbeing Score (WS)"] = (
+        (df["Climate Stability"] * 0.25) +
+        ((100 - df["Inequality Index"]) * 0.25) +
+        (df["Social Trust"] * 0.25) +
+        (df["Mental Health Index"] * 0.25)
+    )
 
-    # Sort by PWI
-    df_sorted = df.sort_values(by="PWI", ascending=False)
+    # 3. Governance Score (1-5) – Democracy and civil liberties
+    df["Governance Score (1–5)"] = df["Governance Score"]
 
-    return df_sorted
+    # Clip WS for range safety
+    df["Wellbeing Score (WS)"] = df["Wellbeing Score (WS)"].clip(lower=0, upper=100)
 
-# Example usage:
-# result = calculate_pwi("ancient.csv")
-# print(result)
+    return df

@@ -6,17 +6,18 @@ This is not a utopia. It is a blueprint grounded in ancient truth, real data, an
 
 ---
 
-## 📊 Live Peace & Wellbeing Dashboard
+## 📊 Peace & Wellbeing Dashboard (Causal Forecast)
 
-Explore the interactive data visualization of human history and peace potential:
+This dashboard models the evolution of peace and wellbeing across history using **causal variables**, not assumptions.  
+It compares two possible futures:
 
-🔗 [Open the Dashboard](https://kora-restore.github.io/kora-restorative-toolkit/algorithm/pwi_dashboard.html)
+- 🔻 **Projected Trend**: Continuation of current global governance, inequality, and military systems.
+- 🌱 **Kōra Vision**: A restorative alternative, reducing violence and increasing shared wellbeing.
 
-This dashboard compares historical civilizations across violence, sustainability, and wellbeing — and visualizes what a peaceful future could look like based on real metrics.
-=======
-Explore our visual, historical model of global violence, sustainability, and collective progress:
+🔗 [View Dashboard (HTML)](https://kora-restore.github.io/kora-restorative-toolkit/algorithm/pwi_dashboard-updated.html)  
+🔗 [View Dashboard (Jupyter Notebook)](https://github.com/Kora-Restore/kora-restorative-toolkit/blob/main/algorithm/pwi_dashboard_causal_forecast.ipynb)
 
-🔗 [View the Dashboard (HTML)](https://kora-restore.github.io/kora-restorative-toolkit/algorithm/pwi_dashboard.html)
+> All scores are generated based on raw variables like Military Intensity, Climate Stability, Inequality, and Mental Health.
 
 ---
 
