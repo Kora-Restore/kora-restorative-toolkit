@@ -1,0 +1,19 @@
+# GUIDE TO COLUMNS
+# Civilization: Name of the society or modern state
+# Conflicts_per_century: Estimated wars per 100 years
+# Deaths_per_conflict: Average deaths per major war
+# BHW: Basic Human Wellbeing (0–100)
+# EF: Equality & Fairness (0–100)
+# ES: Ecological Sustainability (0–100)
+# Region: Geographical macro area
+# Philosophy: Dominant worldview or ethical framework
+# Governance_Model: Political system
+# Economic_System: Economic structure
+Civilization,Conflicts_per_century,Deaths_per_conflict,BHW,EF,ES,Region,Philosophy,Governance_Model,Economic_System
+United States,15,20000,85,50,35,North America,Capitalist Liberalism,Federal Republic,Capitalist
+Soviet Union,10,15000,70,40,40,Eastern Europe & Central Asia,Marxist-Leninism,Single-Party State,Command Economy
+People's Republic of China,12,10000,75,45,50,East Asia,Authoritarian Socialism,One-Party State,State Capitalism
+Nordic Countries,2,1000,90,85,75,Northern Europe,Social Democracy,Parliamentary Democracy,Welfare Capitalism
+United Kingdom,8,8000,80,55,45,Western Europe,Imperial Capitalism,Constitutional Monarchy,Capitalist
+India,6,5000,70,60,60,South Asia,Pluralist Democracy,Federal Parliamentary Republic,Mixed Economy
+Postcolonial Africa (avg.),10,7000,60,50,55,Sub-Saharan Africa,Postcolonial Hybrid,Mixed Parliamentary Republic,Extraction-Based Economy

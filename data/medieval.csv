@@ -1,0 +1,17 @@
+# GUIDE TO COLUMNS
+# Civilization: Name of the society
+# Conflicts_per_century: Estimated wars per 100 years
+# Deaths_per_conflict: Average deaths per war
+# BHW: Basic Human Wellbeing (0–100)
+# EF: Equality & Fairness (0–100)
+# ES: Ecological Sustainability (0–100)
+# Region: Geographical macro area
+# Philosophy: Dominant worldview or ethical system
+# Governance_Model: Political structure
+# Economic_System: Type of economy or wealth flow
+Civilization,Conflicts_per_century,Deaths_per_conflict,BHW,EF,ES,Region,Philosophy,Governance_Model,Economic_System
+Feudal Europe,6,5000,55,40,35,Europe,Catholic Theocracy,Feudal Monarchy,Feudal
+Islamic Golden Age,4,4000,70,65,60,Middle East & North Africa,Islamic Humanism,Caliphate Bureaucracy,Tributary Market
+Mongol Empire,12,15000,45,30,25,Central Asia,Steppe Militarism,Imperial Khanate,Plunder-Based Expansion
+Heian Japan,3,2500,60,50,55,East Asia,Shinto-Buddhism,Feudal Aristocracy,Agrarian Tribute
+Mali Empire,2,2000,75,80,85,Sub-Saharan Africa,Indigenous Spiritualism,Monarchical Federation,Gold-Agrarian Trade

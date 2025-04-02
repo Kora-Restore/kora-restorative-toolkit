@@ -1,8 +1,19 @@
-Civilization,Conflicts_per_century,Deaths_per_conflict,BHW,EF,ES,Economic_System
-Maya Civilization,2,1000,75,80,90,Subsistence-Reciprocal
-Indus Valley Civilization,2,1000,80,85,95,Subsistence-Reciprocal
-Han Dynasty,5,5000,85,70,80,Agricultural Tribute
-Ancient Egypt,4,3000,70,60,75,Agricultural Tribute
-Mesopotamia,8,8000,60,40,50,Agricultural Tribute
-Ancient Greece,10,10000,65,35,45,Slave-Based Economy
-Ancient Rome,12,15000,60,30,40,Slave-Based Economy
+# GUIDE TO COLUMNS
+# Civilization: Name of the society
+# Conflicts_per_century: Estimated wars per 100 years
+# Deaths_per_conflict: Average deaths per war
+# BHW: Basic Human Wellbeing (0–100)
+# EF: Equality & Fairness (0–100)
+# ES: Ecological Sustainability (0–100)
+# Region: Geographical macro area
+# Philosophy: Dominant worldview or ethical system
+# Governance_Model: Political structure
+# Economic_System: Type of economy or wealth flow
+Civilization,Conflicts_per_century,Deaths_per_conflict,BHW,EF,ES,Region,Philosophy,Governance_Model,Economic_System
+Maya Civilization,2,1000,75,80,90,Mesoamerica,Astronomical Animism,City-State Federation,Subsistence-Reciprocal
+Indus Valley Civilization,2,1000,80,85,95,South Asia,Civic-Spiritual Pluralism,Hydraulic Oligarchy,Subsistence-Reciprocal
+Han Dynasty,5,5000,85,70,80,East Asia,Confucian-Bureaucratic Order,Centralized Bureaucracy,Agricultural Tribute
+Ancient Egypt,4,3000,70,60,75,North Africa,Divine Kingship,Theocratic Monarchy,Agricultural Tribute
+Mesopotamia,8,8000,60,40,50,Middle East,Mythic Pantheonism,Temple-State Assemblies,Agricultural Tribute
+Ancient Greece,10,10000,65,35,45,Southern Europe,Rational Polytheism,Democratic Aristocracy,Slave-Based Economy
+Ancient Rome,12,15000,60,30,40,Western Europe,Imperial Authoritarianism,Republic-Empire Transition,Slave-Based Economy

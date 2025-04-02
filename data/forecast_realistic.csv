@@ -1,0 +1,19 @@
+# GUIDE TO COLUMNS
+# Civilization: Projected major global blocs or societal modes (2025–2075)
+# Conflicts_per_century: Forecasted war/violence frequency under current path
+# Deaths_per_conflict: Projected deaths per event (climate, war, unrest)
+# BHW: Projected Basic Human Wellbeing (0–100)
+# EF: Projected Equality & Fairness (0–100)
+# ES: Projected Ecological Sustainability (0–100)
+# Region: Projected global area or affected zones
+# Philosophy: Dominant worldview under inertia scenario
+# Governance_Model: Likely political adaptation
+# Economic_System: Likely economic logic under ongoing trends
+Civilization,Conflicts_per_century,Deaths_per_conflict,BHW,EF,ES,Region,Philosophy,Governance_Model,Economic_System
+Global Neoliberal Continuity,10,12000,82,40,30,Global,Profit-Centered Pragmatism,Corporate-Democratic Hybrid,Market-Driven Globalization
+Authoritarian Tech Bloc (China/Russia),12,15000,75,35,35,Eurasia,Control-Driven Technocracy,Centralized Digital Authoritarianism,State-Controlled Tech Capitalism
+Fragmented Democracies (US/EU),9,8000,78,45,40,North Atlantic,Populist Polarization,Stalled Pluralism,Debt-Driven Consumption Economies
+Post-Growth Experimenters (Nordics),3,2000,88,70,65,Northern Europe,Post-Growth Pragmatism,Cooperative Post-Growth Democracy,Welfare + Circular Hybrid
+Survivalist Global South,8,7000,65,50,45,Sub-Saharan Africa / South Asia,Decolonial Resource Struggles,Transitional Fragmentation,Informal Economies & Barter Zones
+Gulf Tech-Rentier Bloc,6,5000,76,25,20,Middle East,Technocratic Rentierism,Autocratic Monarcho-Techno Rule,Oil-Tech Rentierism
+Climate Collapse Regions,15,20000,55,20,15,Equatorial Band,Desperation & Displacement,Failed States & UN Relief Corridors,Scarcity-Driven Collapse Exchange

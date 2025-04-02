@@ -1,0 +1,18 @@
+# GUIDE TO COLUMNS
+# Civilization: Projected sociocultural formations under global restorative transformation (2075+)
+# Conflicts_per_century: Forecasted rare conflict frequency after global peace adoption
+# Deaths_per_conflict: Minimal or symbolic conflict impact
+# BHW: Basic Human Wellbeing (0–100)
+# EF: Equality & Fairness (0–100)
+# ES: Ecological Sustainability (0–100)
+# Region: Geocultural/bioregional scope
+# Philosophy: Root worldview driving harmony and healing
+# Governance_Model: Stewardship and decision-making structures
+# Economic_System: Regenerative, post-extractive, mutualistic economic logic
+Civilization,Conflicts_per_century,Deaths_per_conflict,BHW,EF,ES,Region,Philosophy,Governance_Model,Economic_System
+Global Kōra Transition Model,0.2,300,97,98,99,Global,Restorative Justice & Interbeing,Elder Council + Participatory Assemblies,Restorative Distributed Stewardship
+Community-Based Earth Alliances,0.5,500,95,97,98,Multi-Continental,Ubuntu + Deep Ecology,Rotational Community Mandates,Gift-Circular Hybrid Economy
+Oceanic & Indigenous Stewardship Confederations,0.1,100,96,99,100,"Pacific, Arctic, Rainforest Zones",Ancestral Knowledge + Oceanic Animism,Custodian-Kin Networks,Ecospiritual Reciprocity
+Post-Digital Wisdom Circles,0.0,0,98,100,99,Decentralized Global Nodes,"Silence, Stewardship, and Reflection",Self-Governed Wisdom Constellations,Post-Scarcity Needs-Based Flow
+Decolonial Continental Federations,0.3,200,94,95,97,"Africa, Americas, Eurasia",Reparation and Pluralistic Regrowth,Decolonial Inter-Council Systems,Regenerative Reparation-led Exchange
+Integrated Bioregional Commons,0.2,150,96,98,99,Watershed-Based Regions,Bioregional Ethics of Sufficiency,Watershed Commons Coordination,Commons-Conscious Contribution Economy
