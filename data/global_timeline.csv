@@ -1,0 +1,48 @@
+Civilization,Conflicts_per_century,Deaths_per_conflict,BHW,EF,ES,Region,Philosophy,Governance_Model,Economic_System,Period,Year_From,Year_To
+Maya Civilization,2.0,1000,75,80,90,Mesoamerica,Astronomical Animism,City-State Federation,Subsistence-Reciprocal,Ancient,2000,1500
+Indus Valley Civilization,2.0,1000,80,85,95,South Asia,Civic-Spiritual Pluralism,Hydraulic Oligarchy,Subsistence-Reciprocal,Ancient,2600,1900
+Han Dynasty,5.0,5000,85,70,80,East Asia,Confucian-Bureaucratic Order,Centralized Bureaucracy,Agricultural Tribute,Ancient,-202,220
+Ancient Egypt,4.0,3000,70,60,75,North Africa,Divine Kingship,Theocratic Monarchy,Agricultural Tribute,Ancient,-3100,-30
+Mesopotamia,8.0,8000,60,40,50,Middle East,Mythic Pantheonism,Temple-State Assemblies,Agricultural Tribute,Ancient,-3500,-500
+Ancient Greece,10.0,10000,65,35,45,Southern Europe,Rational Polytheism,Democratic Aristocracy,Slave-Based Economy,Ancient,-800,-100
+Ancient Rome,12.0,15000,60,30,40,Western Europe,Imperial Authoritarianism,Republic-Empire Transition,Slave-Based Economy,Ancient,-509,476
+Feudal Europe,6.0,5000,55,40,35,Europe,Catholic Theocracy,Feudal Monarchy,Feudal,Medieval,800,1400
+Islamic Golden Age,4.0,4000,70,65,60,Middle East & North Africa,Islamic Humanism,Caliphate Bureaucracy,Tributary Market,Medieval,750,1258
+Mongol Empire,12.0,15000,45,30,25,Central Asia,Steppe Militarism,Imperial Khanate,Plunder-Based Expansion,Medieval,1206,1368
+Heian Japan,3.0,2500,60,50,55,East Asia,Shinto-Buddhism,Feudal Aristocracy,Agrarian Tribute,Medieval,794,1185
+Mali Empire,2.0,2000,75,80,85,Sub-Saharan Africa,Indigenous Spiritualism,Monarchical Federation,Gold-Agrarian Trade,Medieval,1235,1600
+United States (20th c),15.0,20000,85,50,35,North America,Capitalist Liberalism,Federal Republic,Capitalist,Modern,1900,2000
+Soviet Union,10.0,15000,70,40,40,Eastern Europe & Central Asia,Marxist-Leninism,Single-Party State,Command Economy,Modern,1922,1991
+China (Imperial to PRC),12.0,10000,75,45,50,East Asia,Mixed State Capitalism,Mixed Empire to One-Party State,State Capitalism,Modern,1644,2000
+Nordic Countries (20th c),2.0,1000,90,85,75,Northern Europe,Social Democracy,Parliamentary Democracy,Welfare Capitalism,Modern,1945,2000
+United Kingdom (Imperial),8.0,8000,80,55,45,Western Europe,Imperial Capitalism,Constitutional Monarchy,Capitalist,Modern,1800,2000
+India (Post-independence),6.0,5000,70,60,60,South Asia,Pluralist Democracy,Federal Parliamentary Republic,Mixed Economy,Modern,1947,2000
+Postcolonial Africa (avg.),10.0,7000,60,50,55,Sub-Saharan Africa,Postcolonial Hybrid,Mixed Parliamentary Republic,Extraction-Based Economy,Modern,1960,2000
+United States (2020s),14.0,15000,88,45,38,North America,Corporate Surveillance Liberalism,Federal Republic (Polarized),Financial Capitalism,Contemporary,2000,2025
+China (Xi Era),10.0,8000,80,40,42,East Asia,Authoritarian Technocracy,One-Party Technocracy,State-Driven Capitalism,Contemporary,2000,2025
+India (Modi Era),8.0,5000,75,55,50,South Asia,Religious Nationalism,Federal Parliamentary Republic,Mixed Growth Economy,Contemporary,2000,2025
+European Union,4.0,2000,87,78,70,Europe,Secular Social Democracy,Supranational Parliament,Greenish Capitalism,Contemporary,2000,2025
+Russia (Post-2012),12.0,9000,70,35,40,Eastern Europe,Neo-Tsarist Militarism,Strongman Rule,Oligarchic Capitalism,Contemporary,2000,2025
+Brazil (Post-Lula),6.0,3000,72,50,55,South America,Populist Extractivism,Presidential Democracy (Contested),Commodity-Based Economy,Contemporary,2000,2025
+Gulf Tech States,4.0,2000,80,30,30,Middle East,Petro-Technocratic Monarchy,Monarchical Theocracy,Oil-Rentier Tech Hybrid,Contemporary,2000,2025
+Pan-African Visionaries,2.0,1000,68,65,75,Sub-Saharan Africa,Afrofuturist Ubuntu,Emergent Pan-African Federation,Community-Based Rebuilding,Contemporary,2000,2025
+Global Neoliberal Continuity,10.0,12000,82,40,30,Global,Profit-Centered Pragmatism,Corporate-Democratic Hybrid,Market-Driven Globalization,Forecast – Inertia,2025,2075
+Authoritarian Tech Bloc,12.0,15000,75,35,35,Eurasia,Control-Driven Technocracy,Digital Authoritarianism,State-Controlled Tech Capitalism,Forecast – Inertia,2025,2075
+Fragmented Democracies,9.0,8000,78,45,40,North Atlantic,Populist Polarization,Stalled Pluralism,Debt-Driven Consumption,Forecast – Inertia,2025,2075
+Post-Growth Experimenters,3.0,2000,88,70,65,Northern Europe,Post-Growth Pragmatism,Post-Growth Democracy,Welfare + Circular Hybrid,Forecast – Inertia,2025,2075
+Survivalist Global South,8.0,7000,65,50,45,Sub-Saharan Africa & South Asia,Decolonial Resource Struggles,Transitional Fragmentation,Informal & Barter Economies,Forecast – Inertia,2025,2075
+Gulf Tech-Rentier Bloc,6.0,5000,76,25,20,Middle East,Technocratic Rentierism,Monarcho-Techno Rule,Oil-Tech Rentierism,Forecast – Inertia,2025,2075
+Climate Collapse Regions,15.0,20000,55,20,15,Equatorial Band,Desperation & Displacement,Failed States & Relief Corridors,Scarcity-Driven Exchange,Forecast – Inertia,2025,2075
+Corporate-Technocratic Remnants,8.0,30000,60,20,15,Global Megacity Zones,Algorithmic Hedonism,Protocol Councils,Tokenized Scarcity,Forecast – Inertia (Long-Term),2075,2575
+Eco-Fortress City-States,6.0,10000,65,35,50,Mountain & Polar Strongholds,Ecological Isolationism,Eco-Military Rule,Protection Economies,Forecast – Inertia (Long-Term),2075,2575
+AI-Governed Synthetics,1.0,1000,80,60,90,Digital Zones,Transhuman Rationality,AI Autonomous Admins,Post-Market Algorithms,Forecast – Inertia (Long-Term),2075,2575
+Climate Displacement Nomads,5.0,15000,40,25,40,Mobility Corridors,Survival Animism,Nomadic Consensus,Forage-Trade Hybrid,Forecast – Inertia (Long-Term),2075,2575
+Neo-Feudal Agro-Zones,7.0,12000,50,30,55,Farmlands,Neo-Feudal Mythology,Agrarian Lords,Agrarian Labor,Forecast – Inertia (Long-Term),2075,2575
+Bio-Survivor Enclaves,2.0,5000,75,70,85,Forest Bioregions,Biocentric Stewardship,Bio-Spiritual Clans,DNA Access Rights,Forecast – Inertia (Long-Term),2075,2575
+Post-Civilizational Tribes,0.5,200,55,65,95,Wilderness Zones,Rewilded Memory,Elder-Guided Circles,Ritual Gift Cycles,Forecast – Inertia (Long-Term),2075,2575
+Global Kōra Transition Model,0.2,300,97,98,99,Global,Restorative Interbeing,Elder Council + Assemblies,Stewardship Exchange,Forecast – Kōra Vision,2075,2150
+Community-Based Alliances,0.5,500,95,97,98,Multi-Continental,Ubuntu + Ecology,Rotational Mandates,Gift-Circular Economy,Forecast – Kōra Vision,2075,2150
+Oceanic Stewardship Confederations,0.1,100,96,99,100,Pacific + Indigenous,Ancestral + Oceanic Wisdom,Custodian Networks,Ecospiritual Reciprocity,Forecast – Kōra Vision,2075,2150
+Post-Digital Wisdom Circles,0.0,0,98,100,99,Decentralized Nodes,Stewardship & Reflection,Wisdom Constellations,Needs-Based Flow,Forecast – Kōra Vision,2075,2150
+Decolonial Federations,0.3,200,94,95,97,"Africa, Americas, Eurasia",Pluralistic Reparation,Inter-Council Systems,Reparation Exchange,Forecast – Kōra Vision,2075,2150
+Bioregional Commons,0.2,150,96,98,99,Watershed Zones,Ethics of Sufficiency,Commons Coordination,Contribution Economy,Forecast – Kōra Vision,2075,2150

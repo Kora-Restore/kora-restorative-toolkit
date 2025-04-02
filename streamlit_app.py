@@ -3,69 +3,68 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 
-st.set_page_config(page_title="Kōra PWI Timeline", layout="wide")
-st.title("🌍 Kōra Peace & Wellbeing Index (PWI)")
-st.markdown("Explore the Peace & Wellbeing Index across time — from ancient civilizations to future visions.")
-
-# Map of available datasets
-dataset_options = {
-    "Ancient (Pre-500 CE)": "data/ancient.csv",
-    "Medieval (500–1500 CE)": "data/medieval.csv",
-    "Modern (1500–2000 CE)": "data/modern.csv",
-    "Contemporary (2000–2025)": "data/contemporary.csv",
-    "Forecast – Current Trajectory (2025–2075)": "data/forecast_realistic.csv",
-    "Forecast – Long Term (Next 500 yrs)": "data/forecast_longterm.csv",
-    "Forecast – Kōra Vision (2075+)": "data/kora_vision.csv"
-}
-
-# Dataset selector
-dataset_name = st.sidebar.selectbox("📂 Select Dataset", list(dataset_options.keys()))
-file_path = dataset_options[dataset_name]
+st.set_page_config(page_title="Kōra – Global Timeline", layout="wide")
+st.title("🌍 Kōra: Peace & Wellbeing Index – Global Timeline")
 
 @st.cache_data
-def load_and_process(file_path):
-    df = pd.read_csv(file_path, comment="#")
+def load_data():
+    df = pd.read_csv("data/global_timeline.csv")
     df["VI"] = df["Conflicts_per_century"] * df["Deaths_per_conflict"]
     df["SEWI"] = (df["BHW"] + df["EF"] + df["ES"]) / 3
     df["PWI"] = df["SEWI"] / df["VI"]
     df["PWI_scaled"] = df["PWI"] * 1000
     return df
 
-df = load_and_process(file_path)
+df = load_data()
 
-# Optional filters
-with st.sidebar.expander("🔍 Optional Filters"):
+# Sidebar Filters
+st.sidebar.header("🔍 Filters")
+
+# Year-based filtering
+selected_year = st.sidebar.slider("Select a Year", min_value=int(df["Year_From"].min()),
+                                   max_value=int(df["Year_To"].max()), value=2025)
+filtered_df = df[(df["Year_From"] <= selected_year) & (df["Year_To"] >= selected_year)]
+
+# Period filter
+periods = st.sidebar.multiselect("Period", options=df["Period"].unique(), default=df["Period"].unique())
+filtered_df = filtered_df[filtered_df["Period"].isin(periods)]
+
+# Optional advanced filters
+with st.sidebar.expander("⚙️ Advanced Filters"):
     if "Economic_System" in df.columns:
         econ = st.multiselect("💰 Economic System", df["Economic_System"].unique(), default=df["Economic_System"].unique())
-        df = df[df["Economic_System"].isin(econ)]
+        filtered_df = filtered_df[filtered_df["Economic_System"].isin(econ)]
+    if "Governance_Model" in df.columns:
+        gov = st.multiselect("🏛 Governance Model", df["Governance_Model"].unique(), default=df["Governance_Model"].unique())
+        filtered_df = filtered_df[filtered_df["Governance_Model"].isin(gov)]
 
-# Display Table
-st.subheader(f"📊 PWI Table – {dataset_name}")
-st.dataframe(df[["Civilization", "PWI_scaled", "SEWI", "VI", "Economic_System"]], use_container_width=True)
+# Display Data Table
+st.subheader(f"📋 Civilizations active in year {selected_year}")
+st.dataframe(filtered_df[["Civilization", "Period", "PWI_scaled", "SEWI", "VI", "Region"]], use_container_width=True)
 
-# Info link for reflection
-if "ancient" in file_path or "forecast" in file_path:
-    st.info(
-        "🪞 Struggling with what you see? [Read why this might feel wrong.](https://github.com/Kora-Restore/kora-restorative-toolkit/blob/main/docs/why-it-feels-wrong.md)"
-    )
-
-# Bar Chart
-st.subheader("📈 PWI (scaled) by Civilization")
-df_sorted = df.sort_values("PWI_scaled", ascending=False)
+# PWI Bar Chart
+st.subheader("📈 Peace & Wellbeing Index (scaled)")
+df_sorted = filtered_df.sort_values("PWI_scaled", ascending=False)
 fig1, ax1 = plt.subplots(figsize=(10, 6))
 ax1.barh(df_sorted["Civilization"], df_sorted["PWI_scaled"], color="skyblue")
 ax1.set_xlabel("PWI (scaled x1000)")
-ax1.set_title("Peace & Wellbeing Index Ranking")
+ax1.set_title("PWI by Civilization")
 ax1.invert_yaxis()
 st.pyplot(fig1)
 
-# Scatter Plot
-st.subheader("⚖️ SEWI vs Violence Index (VI)")
+# SEWI vs VI Scatter Plot
+st.subheader("⚖️ SEWI vs Violence Index")
 fig2, ax2 = plt.subplots(figsize=(8, 6))
-ax2.scatter(df["VI"], df["SEWI"], s=100, color="green")
-for i in range(len(df)):
-    ax2.text(df["VI"].iloc[i] + 100, df["SEWI"].iloc[i], df["Civilization"].iloc[i], fontsize=8)
+ax2.scatter(filtered_df["VI"], filtered_df["SEWI"], s=100, color="green")
+for i in range(len(filtered_df)):
+    ax2.text(filtered_df["VI"].iloc[i] + 100, filtered_df["SEWI"].iloc[i], filtered_df["Civilization"].iloc[i], fontsize=8)
 ax2.set_xlabel("Violence Index (VI)")
 ax2.set_ylabel("Sustainable & Equitable Wellbeing Index (SEWI)")
-ax2.set_title("SEWI vs VI")
+ax2.set_title("SEWI vs VI Scatter")
 st.pyplot(fig2)
+
+# Reminder
+if selected_year > 2025:
+    st.info("🧭 You're exploring the future. Some results are speculative based on current or Kōra-aligned trajectories.")
+elif selected_year < 1500:
+    st.warning("🏺 This view includes ancient or medieval estimates. Historical data is modeled, not exact.")
