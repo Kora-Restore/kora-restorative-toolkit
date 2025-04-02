@@ -20,10 +20,11 @@ df = load_data()
 # Sidebar Filters
 st.sidebar.header("🔍 Filters")
 
-# Year-based filtering
-selected_year = st.sidebar.slider("Select a Year", min_value=int(df["Year_From"].min()),
-                                   max_value=int(df["Year_To"].max()), value=2025)
-filtered_df = df[(df["Year_From"] <= selected_year) & (df["Year_To"] >= selected_year)]
+# Year range filtering
+year_min, year_max = int(df["Year_From"].min()), int(df["Year_To"].max())
+year_range = st.sidebar.slider("Select Year Range", min_value=year_min, max_value=year_max, value=(2025, 2075))
+start_year, end_year = year_range
+filtered_df = df[(df["Year_From"] <= end_year) & (df["Year_To"] >= start_year)]
 
 # Period filter
 periods = st.sidebar.multiselect("Period", options=df["Period"].unique(), default=df["Period"].unique())
@@ -39,7 +40,7 @@ with st.sidebar.expander("⚙️ Advanced Filters"):
         filtered_df = filtered_df[filtered_df["Governance_Model"].isin(gov)]
 
 # Display Data Table
-st.subheader(f"📋 Civilizations active in year {selected_year}")
+st.subheader(f"📋 Civilizations active between {start_year} and {end_year}")
 st.dataframe(filtered_df[["Civilization", "Period", "PWI_scaled", "SEWI", "VI", "Region"]], use_container_width=True)
 
 # PWI Bar Chart
@@ -64,7 +65,7 @@ ax2.set_title("SEWI vs VI Scatter")
 st.pyplot(fig2)
 
 # Reminder
-if selected_year > 2025:
-    st.info("🧭 You're exploring the future. Some results are speculative based on current or Kōra-aligned trajectories.")
-elif selected_year < 1500:
-    st.warning("🏺 This view includes ancient or medieval estimates. Historical data is modeled, not exact.")
+if end_year > 2025:
+    st.info("🧭 You're exploring future trajectories. Results are scenario-based forecasts.")
+elif end_year < 1500:
+    st.warning("🏺 This range includes ancient or medieval estimates. Values are interpretative models.")
