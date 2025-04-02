@@ -1,0 +1,20 @@
+# GUIDE TO COLUMNS
+# Civilization: Nation or bloc as represented in 2000–2025 CE
+# Conflicts_per_century: Estimated war frequency extrapolated
+# Deaths_per_conflict: Avg death tolls from conflict or proxy war
+# BHW: Basic Human Wellbeing (0–100)
+# EF: Equality & Fairness (0–100)
+# ES: Ecological Sustainability (0–100)
+# Region: Global macro-area
+# Philosophy: Dominant sociopolitical or ideological logic
+# Governance_Model: Political structure
+# Economic_System: Dominant economic logic
+Civilization,Conflicts_per_century,Deaths_per_conflict,BHW,EF,ES,Region,Philosophy,Governance_Model,Economic_System
+United States (2020s),14,15000,88,45,38,North America,Corporate Surveillance Liberalism,Federal Republic (Polarized),Financial Capitalism
+China (Xi Era),10,8000,80,40,42,East Asia,Authoritarian Technocracy,One-Party Technocracy,State-Driven Capitalism
+India (Modi Era),8,5000,75,55,50,South Asia,Religious Nationalism,Federal Parliamentary Republic,Mixed Growth Economy
+European Union,4,2000,87,78,70,Europe,Secular Social Democracy,Supranational Parliament,Greenish Capitalism
+Russia (Post-2012),12,9000,70,35,40,Eastern Europe,Neo-Tsarist Militarism,Centralized Strongman Rule,Oligarchic Capitalism
+Brazil (Post-Lula),6,3000,72,50,55,South America,Populist Extractivism,Presidential Democracy (Contested),Commodity-Based Economy
+Gulf States (UAE/Saudi),4,2000,80,30,30,Middle East,Petro-Technocratic Monarchy,Monarchical Theocracy,Oil-Rentier Tech Hybrid
+Pan-African Visionaries,2,1000,68,65,75,Sub-Saharan Africa,Afrofuturist Ubuntu,Emergent Pan-African Federation,Community-Based Rebuilding
